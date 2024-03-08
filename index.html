@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAMP portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <div class="contain">
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="SAMP LOGO2.png" alt="Logo" />
+        <span class="website-name glow">SAMP</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFucntion()" class="dropbtn">SAMP Committee
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">I-SAMP</a>
+              <a href="#">D-SAMP</a>
+            </div>
+          </div>
+        </li>
+        <li><input type="text" placeholder="Search..." /></li>
+        <li><button class="btn" onclick="openNewPage()">Login</button></li>
+      </ul>
+    </nav>
+
+    <div class="front-page">
+      <div class="front-page-overlay"></div>
+      <div class="front-page-content">
+        <h1 id="front-page-heading">WELCOME TO STUDENT ACADEMIC MENTORSHIP PROGRAMME</h1>
+        <p id="front-page-text">“Join a Community of Achievers and Mentors, Where Futures Are Forged."</p>
+        <!-- <button class="btn">Get Started</button> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <section id="services-container">
+    <div id="services">
+      <div class="box">
+        <!-- <img src="img/1.png" alt=""> -->
+        <h2 class="h-secondary center">Mentor Section</h2>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis eligendi
+          ullam nam temporibus possimus fugit earum in vero cumque ratione est facilis labore expedita
+          molestiae eius, atque vitae ex ducimus natus quod corporis!</p>
+        <a href="#">Read More ></a>
+      </div>
+      <div class="box">
+        <!-- <img src="img/2.webp" alt=""> -->
+        <h2 class="h-secondary center">Mentee Section</h2>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis eligendi
+          ullam nam temporibus possimus fugit earum in vero cumque ratione est facilis labore expedita
+          molestiae eius, atque vitae ex ducimus natus quod corporis!</p>
+        <a href="#">Read More ></a>
+      </div>
+      <!-- <div class="box">
+            
+            <h2 class="h-secondary center">Alumni Section</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci blanditiis eligendi
+                ullam nam temporibus possimus fugit earum in vero cumque ratione est facilis labore expedita
+                molestiae eius, atque vitae ex ducimus natus quod corporis!</p>
+            <a href="#">Read More ></a>
+
+        </div> -->
+    </div>
+  </section>
+
+
+
+
+
+  <div class="imgAnnouncement">
+    <div class="textcenter">
+      <h2>Image Gallery</h2>
+
+      <div class="imgscroll">
+        <div class="container">
+          <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+              chevron_left
+            </button>
+            <ul class="image-list">
+              <img class="image-item" src="images/img-1.jpg" alt="img-1" />
+              <img class="image-item" src="images/img-2.jpg" alt="img-2" />
+              <img class="image-item" src="images/img-3.jpg" alt="img-3" />
+              <!-- <img class="image-item" src="images/img-4.jpg" alt="img-4" />
+              <img class="image-item" src="images/img-5.jpg" alt="img-5" />
+              <img class="image-item" src="images/img-6.jpg" alt="img-6" />
+              <img class="image-item" src="images/img-7.jpg" alt="img-7" />
+              <img class="image-item" src="images/img-8.jpg" alt="img-8" />
+              <img class="image-item" src="images/img-9.jpg" alt="img-9" />
+              <img class="image-item" src="images/img-10.jpg" alt="img-10" /> -->
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+              chevron_right
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    
+    <div class="headingAnnoucement">
+      <h2>Announcements</h2>
+      <div class="container_announcment">
+        <div class="announcement-container" onmouseenter="startScroll()" onmouseleave="stopScroll()">
+          <div class="announcement">
+            <h2>Important Announcement 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper lacus nec lorem tincidunt, vel
+              blandit nisl bibendum.</p>
+          </div>
+          <div class="announcement">
+            <h2>Important Announcement 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper lacus nec lorem tincidunt, vel
+              blandit nisl bibendum.</p>
+          </div>
+          <div class="announcement">
+            <h2>Important Announcement 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper lacus nec lorem tincidunt, vel
+              blandit nisl bibendum.</p>
+          </div>
+          <div class="announcement">
+            <h2>Important Announcement 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper lacus nec lorem tincidunt, vel
+              blandit nisl bibendum.</p>
+          </div>
+          <div class="announcement">
+            <h2>Important Announcement 5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper lacus nec lorem tincidunt, vel
+              blandit nisl bibendum.</p>
+          </div>
+          <!-- Add more announcements here -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <section class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4 style="text-align: center;">Links</h4>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4 style="text-align: center;">Resources</h4>
+        <ul class="links">
+          <li><a href="#">Study Materials</a></li>
+          <li><a href="#">Career Guidance</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4 style="text-align: center;">Legal</h4>
+        <ul class="links">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>
+          Subscribe to our newsletter for updates, resources, and mentorship opportunities.
+        </p>
+        <form action="#">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit">SUBMIT</button>
+        </form>
+        <div class="icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <script src="1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="gallery.js" defer></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
